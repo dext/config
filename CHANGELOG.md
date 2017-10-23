@@ -3,6 +3,14 @@
 ## Unreleased
 
 ### New features
+
+* Add parsing of ENV variable values to Boolean type
+
+...
+
+## 1.5.0
+
+### New features
 * Add count to the reserved names list ([#167](https://github.com/railsconfig/config/pull/167) thanks to [@carbonin](https://github.com/carbonin))
 
 ### Bug fixes
@@ -78,6 +86,3 @@
 
 * Expose Settings in application.rb, so you don't have to duplicate configuration for each environment file ([#59](https://github.com/railsjedi/config/issues/59))
 * Adding support for Rails 4.1.0.rc ([#70](https://github.com/railsjedi/config/issues/70))
-
-
-
