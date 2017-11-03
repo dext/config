@@ -4,6 +4,12 @@
 
 ### New features
 
+* `Config#fail_on_missing` option (default `false`) to raise a `KeyError` exception when accessing a non-existing key
+* Add ability to test if a value was set for a given key with `key?` and `has_key?`
+
+## 1.5.1
+
+### New features
 * Add parsing of ENV variable values to Boolean type
 
 ...
