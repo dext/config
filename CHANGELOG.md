@@ -4,6 +4,12 @@
 
 ### New features
 
+* Fix `key?` and `has_key?`, which raise NoMethodError in non Rails environment, by using ActiveSupport `#delegate` implicitly ([#185](https://github.com/railsconfig/config/pull/185))
+
+## 1.6.0
+
+**New features**
+
 * `Config#fail_on_missing` option (default `false`) to raise a `KeyError` exception when accessing a non-existing key
 * Add ability to test if a value was set for a given key with `key?` and `has_key?`
 
