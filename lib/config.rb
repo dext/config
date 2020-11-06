@@ -4,11 +4,9 @@ require 'config/configuration'
 require 'config/version'
 require 'config/sources/yaml_source'
 require 'config/sources/hash_source'
-require 'config/validation/schema'
 require 'deep_merge'
 
 module Config
-  extend Config::Validation::Schema
   extend Config::Configuration.new(
     # general options
     const_name: 'Settings',
@@ -23,7 +21,6 @@ module Config
     merge_nil_values: true,
     overwrite_arrays: true,
     merge_hash_arrays: false,
-    validation_contract: nil
   )
 
   def self.setup
